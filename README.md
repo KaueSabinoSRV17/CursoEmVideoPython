@@ -1,2 +1,3 @@
-# CursoEmVideoPython
-Códigos e exercícios desenvolvidos em Python durante o acompanhamento do curso
+# Repositório de aprendizado em Python
+
+No repositório estarão registrados códigos feitos em aula e códigos de desafios
