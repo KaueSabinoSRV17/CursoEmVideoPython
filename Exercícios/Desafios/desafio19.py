@@ -4,4 +4,4 @@ sorteado = randint(0, 3)
 
 alunos = ['João', 'Maria', 'Kauê', 'Heberty']
 
-print(alunos[sorteado])
+print('{}, vá limpar a lousa!'.format(alunos[sorteado]))
