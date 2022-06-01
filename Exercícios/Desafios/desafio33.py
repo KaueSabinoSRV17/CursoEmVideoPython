@@ -1,29 +1,27 @@
-n1 = int(input('Digite o primeiro número: '))
+a = int(input('Digite o primeiro número: '))
+b = int(input('Digite o segundo número: '))
+c = int(input('Digite o terceiro número: '))
 
-n2 = int(input('Digite o segundo número: '))
+mn = a
 
-n3 = int(input('Digite o terceiro número: '))
+if b < a and b < c:
 
-if n1 > n2:
+    mn = b
 
-    print('O maior número foi {}'.format(n1))
+if c < a and c < b:
 
-    if n3 > n1:
+    mn = c
 
-        print('O maior número foi {}'.format(n3))
+print('O menor valor foi {}'.format(mn))
 
-else:
+ma = a
 
-    print('O maior número foi {}'.format(n2))
+if b > a and b > c:
 
-if n1 < n2:
+    ma = b
 
-    print('O menor número foi {}'.format(n1))
+if c > a and c > b:
 
-    if n3 < n1:
+    ma = c
 
-        print ('O menor número foi {}'.format(n3))
-
-else:
-
-    print('O menor número foi {}'.format(n2))
+print('O maior valor foi {}'.format(ma))
