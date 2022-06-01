@@ -1,5 +1,6 @@
-n = input('Digite seu nome: ')
+import string
 
-res = 'Silva' in n
 
-n('O seu nome contêm a palavra Silva? \n A resposta é: {}'.format(res))
+n = str(input('Digite seu nome: '))
+
+n('O seu nome contêm a palavra Silva? \n A resposta é: {}'.format('silva' in n.lower())) 
