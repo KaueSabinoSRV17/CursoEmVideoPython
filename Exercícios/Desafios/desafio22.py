@@ -1,4 +1,4 @@
-nm = input('Digite seu nome completo: ')
+nm = input('Digite seu nome completo: ').strip()
 
 caps = nm.upper()
 bx = nm.lower()
