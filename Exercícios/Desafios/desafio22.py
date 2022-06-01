@@ -1,6 +1,3 @@
-from ntpath import join
-
-
 nm = input('Digite seu nome completo: ')
 
 caps = nm.upper()
