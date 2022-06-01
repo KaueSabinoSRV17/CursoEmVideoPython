@@ -1,13 +1,15 @@
-ano = int(input('Digite o ano a ser verificado: '))
+import datetime
 
-divid4 = ano % 4 == 0
+ano = int(input('Digite o ano a ser verificado (Digite 0 para verificar o ano atual): '))
 
-divid100 = ano % 100 == 0
+if ano == 0:
 
-divid400 = ano % 400 == 0
+    ano = datetime.date.today().year
 
-if divid4 == True and divid100 == True and divid400 == True:
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
 
     print('É um ano bissexto')
 
-else: print('Não é Bissexto')
+else: 
+    
+    print('Não é Bissexto')
