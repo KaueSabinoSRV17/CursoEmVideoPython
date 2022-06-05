@@ -1,6 +1,12 @@
 # Categorias de Natação
 
-id = int(input('Digite a idade do atleta: '))
+import datetime
+
+atual = datetime.date.today().year
+
+nasc = int(input('Digite o ano de nascimento do atleta: '))
+
+id = atual - nasc
 
 ct = ['Mirim', 'Infantil', 'Junior', 'Senior', 'Master']
 
