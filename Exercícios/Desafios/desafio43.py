@@ -1,8 +1,8 @@
 # Cálculo de IMC
 
-alt = float(input('Digite a altura: '))
+alt = float(input('Digite a altura (m): '))
 
-ps = float(input('Digite o peso: '))
+ps = float(input('Digite o peso (Kg): '))
 
 imc = ps / (alt * alt)
 
