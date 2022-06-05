@@ -1,6 +1,12 @@
 # Alistamento Militar
 
-id = int(input('Quantos anos completos o senhor tem? \n'))
+import datetime
+
+atual = datetime.date.today().year
+
+ano = int(input('Digite o ano do seu nascimento: '))
+
+id = atual - ano
 
 if id < 18:
 
