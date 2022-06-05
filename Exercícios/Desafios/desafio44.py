@@ -14,17 +14,12 @@ if vld:
 
         prd = prd - (prd / 100 * 10)
 
-        print('O total da compra será {}R$'.format(prd))
-
     elif esc == 1:
 
         prd = prd - (prd / 100 * 5)
-
-        print('O total da compra será {}R$'.format(prd))
-
     elif esc == 2:
 
-        print('O total da compra será {}R$, feito em duas parcelas'.format(prd))
+        print('Em duas parcelas, '.format(prd))
 
     else:
 
@@ -32,8 +27,12 @@ if vld:
 
         prd = (prd / 100 * 20) + prd
 
-        print('O total da compra será {}R$, feito em {} parcelas'.format(prd, prc))
+        vlr = prd / prc
+
+        print('Feito em {} parcelas de R${}, com 20% de juros, '.format(prc, vlr))
 
 else:
 
     print('Opção inválida')
+
+print('O total da compra será {}R$'.format(prd))
