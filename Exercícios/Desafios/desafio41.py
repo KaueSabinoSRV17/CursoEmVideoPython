@@ -22,7 +22,7 @@ elif id <= 19:
 
     print('O atleta estará na categoria {}'.format(ct[2]))
 
-elif id == 20:
+elif id <= 25:
 
     print('O atleta estará na categoria {}'.format(ct[3]))
 
