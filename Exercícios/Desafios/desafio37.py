@@ -12,15 +12,15 @@ if vld:
 
     if esc == 1:
 
-        print(bin(n))
+        print(str(bin(n))[2:])
 
     elif esc == 2:
 
-        print(oct(n))
+        print(str(oct(n))[2:])
 
     elif esc == 3:
         
-        print(hex(n))
+        print(str(hex(n))[2:])
 
 else: 
 
