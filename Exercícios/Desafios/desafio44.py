@@ -29,10 +29,10 @@ if vld:
 
         vlr = prd / prc
 
-        print('Feito em {} parcelas de R${}, com 20% de juros, '.format(prc, vlr))
+        print('Feito em {} parcelas de R${:.2f}, com 20% de juros, '.format(prc, vlr))
 
 else:
 
     print('Opção inválida')
 
-print('O total da compra será {}R$'.format(prd))
+print('O total da compra será R${:.2f}'.format(prd))
