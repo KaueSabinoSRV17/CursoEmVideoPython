@@ -1,4 +1,5 @@
 s = 0
+c = 0
 
 for i in range(0, 6):
 
@@ -6,6 +7,11 @@ for i in range(0, 6):
 
     if n % 2 == 0:
 
+        c += 1
         s += n
 
-print('A soma dos números foi {}'.format(s))
+    else: 
+
+        print('\nNúmero impar. Não será considerado na conta\n')
+
+print('A soma dos {} números considerados foi {}'.format(c, s))
