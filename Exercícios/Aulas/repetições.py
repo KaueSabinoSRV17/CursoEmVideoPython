@@ -11,6 +11,25 @@ for c in range(0, 11):
 
     print(c)
 
-print('FIM')
+print('FIM - Feito em For')
 
 # Neste código, por exemplo, podemos repetir a exibição de diversos números
+
+
+"""
+
+    Aula 12 - While
+
+    Devemos usar while quando não sabemos o limite das repetições
+
+"""
+
+i = 0
+
+while i < 10:
+
+    i += 1
+
+    print(i)
+
+print('Fim - Usando o While')
