@@ -1,4 +1,4 @@
-for i in range(0, 51):
+for i in range(0, 51, 2):
 
     if i % 2 == 0:
 
