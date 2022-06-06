@@ -1,6 +1,6 @@
 s = 0
 
-for i in range(0, 501):
+for i in range(0, 501, 2):
 
     if i % 3 == 0 and i % 2 == 1:
 
