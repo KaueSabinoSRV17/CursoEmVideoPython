@@ -1,6 +1,6 @@
 # Leitor de sexo
 
-sx = input('Digite seu sexo [M/F]: ').upper()
+sx = input('Digite seu sexo [M/F]: ').upper().strip()[0]
 
 while sx != 'M' and sx != 'F':
 
