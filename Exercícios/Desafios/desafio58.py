@@ -19,20 +19,16 @@ cht = int(input('Chute qual número o computador pensou: '))
 
 print(linha)
 
-while tnt > 0:
+while cht != n:
 
-    if cht == n:
+    if cht < n:
 
-        print('Parabéns, você acertou!')
+        cht = int(input('Pensei em algo maior, tente novamente: '))
+        print(linha)
 
-        tnt = 0
+    if cht > n:
 
-    else:
+        cht = int(input('Pensei em algo menor, tente novamente: '))
+        print(linha)
 
-        tnt -= 1
-        print('Você errou! Restam {} tentativas'.format(tnt))
-
-        cht = int(input('Tente novamente: '))
-
-    print(linha)
-
+print('Você acertou!')
