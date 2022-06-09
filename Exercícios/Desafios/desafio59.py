@@ -61,6 +61,8 @@ while op != 0:
 
         print('O maior foi {}'.format(mr))        
 
+        op = int(input(menu))
+
     elif op == 6:
 
         print('Informe novos números novamente: ')
