@@ -3,7 +3,7 @@ import time
 
 n = random.randint(0, 5)
 
-tnt = 3
+tnt = 1
 
 linha = '-=-' * 20
 
@@ -23,12 +23,14 @@ while cht != n:
 
     if cht < n:
 
+        tnt += 1
         cht = int(input('Pensei em algo maior, tente novamente: '))
         print(linha)
 
     if cht > n:
 
+        tnt += 1
         cht = int(input('Pensei em algo menor, tente novamente: '))
         print(linha)
 
-print('Você acertou!')
+print('Você acertou! Foram necessárias {} Tentativas!'.format(tnt))
