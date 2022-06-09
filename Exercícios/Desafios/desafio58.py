@@ -3,9 +3,9 @@ import time
 
 n = random.randint(0, 5)
 
-linha = '-=-' * 20
+tnt = 3
 
-c = 0
+linha = '-=-' * 20
 
 print(linha)
 
@@ -19,20 +19,20 @@ cht = int(input('Chute qual número o computador pensou: '))
 
 print(linha)
 
-while cht != n:
+while tnt > 0:
 
     if cht == n:
 
         print('Parabéns, você acertou!')
 
+        tnt = 0
+
     else:
 
-        n - random.randint(0, 5)
+        tnt -= 1
+        print('Você errou! Restam {} tentativas'.format(tnt))
 
-        c += 1
+        cht = int(input('Tente novamente: '))
 
-        print('Você errou! Pensei em {} não em {}'.format(n, cht))
+    print(linha)
 
-        cht = int(input('Tente mais uma vez: '))
-
-print(linha)
