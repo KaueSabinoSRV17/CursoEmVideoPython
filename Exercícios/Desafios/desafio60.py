@@ -1,9 +1,9 @@
 # Fatorial com repetição While
 
 
-n = int(input('Digite o número que iremos usar na fatorial: '))
+n = int(input('Resultado com while: '))
 
-r = n
+r = n - 1
 
 while r > 0:
 
@@ -13,3 +13,15 @@ while r > 0:
     r -= 1
 
 print(n)
+
+n = int(input('Resultado com for: '))
+
+print(n, end='')
+
+for i in range(n - 1, 1, -1):
+
+    n *= i
+
+    print(' x {}'.format(i), end='')
+
+print(' = {}'.format(n))
