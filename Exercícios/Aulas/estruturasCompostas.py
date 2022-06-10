@@ -47,3 +47,5 @@ for char in alfnum:
     print(f'{char}', end=' ')
 
 print(f'\nPodemos acessar os valores de forma contrária: \n{cmd[-1]}\n e também combinando fatiamento: \n{cmd[-2:]}\n no caso acima, foi acessado a partir do segundo valor da direita para a esquerda até o final')
+
+print(f'Podemos também procurar um valor na tupla e descobrir em qual posição ele aparece pela primeira vez: {cmd.index("Suco")}\nFoi o valor acima é a posição em que Suco aparece pela primeira vez nesta tupla')
