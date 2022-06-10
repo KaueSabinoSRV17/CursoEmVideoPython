@@ -28,5 +28,7 @@ print(F'''{lh}
 {lh}''')
 
 for i in tp:
+
+    if i % 2 == 0:
     
-    print(f'{i:<40} {i+1:>40}')
+        print(f'{i:<.40}')
