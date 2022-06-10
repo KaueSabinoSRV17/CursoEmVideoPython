@@ -3,12 +3,13 @@
 
 n = int(input('Digite o número que iremos usar na fatorial: '))
 
-r = 0
+r = n
 
-while n != 1:
+while r > 0:
 
-    r = n * n
+    n = n * r
 
-    n = n - 1
+    print('{}'.format(r), end=' x ')
+    r -= 1
 
-print(r)
+print(n)
