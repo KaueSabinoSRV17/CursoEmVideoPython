@@ -1,10 +1,13 @@
 n = float(input('Digite o primeiro termo da P.A: '))
 p = int(input('Digite a razão desejada: '))
+c = 0
 
-while p != 10:
+print(n)
 
+while c < 9:
+    
     n += p
-
-    p = p + 1
-
+    
+    c += 1
+    
     print(n)
