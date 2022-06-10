@@ -33,3 +33,18 @@ while i < 10:
     print(i)
 
 print('Fim - Usando o While')
+
+"""
+
+    Aula 15 - Comando break
+
+    podemos interromper toda a execução do laço antes de sua condição se tornar verdade, através de um break
+
+"""
+
+while True:
+
+    p = input('Denovo? [S/N]')
+
+    if p in 'nN':
+        break
