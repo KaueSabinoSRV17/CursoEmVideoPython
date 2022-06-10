@@ -44,4 +44,6 @@ alfnum = lts + nms
 
 for char in alfnum:
 
-    print(f'\n {char}')
+    print(f'{char}', end=' ')
+
+print(f'\nPodemos acessar os valores de forma contrária: \n{cmd[-1]}\n e também combinando fatiamento: \n{cmd[-2:]}\n no caso acima, foi acessado a partir do segundo valor da direita para a esquerda até o final')
