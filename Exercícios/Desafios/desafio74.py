@@ -1,12 +1,6 @@
 from random import randint as nal
 
-n1 = nal(0, 9999)
-n2 = nal(0, 9999)
-n3 = nal(0, 9999)
-n4 = nal(0, 9999)
-n5 = nal(0, 9999)
-
-nms = n1, n2, n3, n4, n5
+nms = nal(0, 999),  nal(0, 999),  nal(0, 999),  nal(0, 999)
 
 ord = sorted(nms)
 
