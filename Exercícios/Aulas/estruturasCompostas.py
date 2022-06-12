@@ -32,7 +32,7 @@ for c in cmd:
 
 for p, c in enumerate(cmd):
 
-    print(f'Feito com enumarate: {cmd} na posição {p}')
+    print(f'Feito com enumarate: {cmd} na posição {p}. O enumerate é usado para podermos trabalhar tanto com a posição quanto com a lista em si')
 
 # É possível também somar tuplas!
 
@@ -49,3 +49,52 @@ for char in alfnum:
 print(f'\nPodemos acessar os valores de forma contrária: \n{cmd[-1]}\n e também combinando fatiamento: \n{cmd[-2:]}\n no caso acima, foi acessado a partir do segundo valor da direita para a esquerda até o final')
 
 print(f'Podemos também procurar um valor na tupla e descobrir em qual posição ele aparece pela primeira vez: {cmd.index("Suco")}\nFoi o valor acima é a posição em que Suco aparece pela primeira vez nesta tupla')
+
+
+"""
+
+    Aula 17 - Listas
+
+    Tuplas não podem ser mudadas em tempo de execução. Para isso, vamos usar Listas
+
+    Para adicionar ao final de uma lista, usamos o comando .append(NovoValor)
+
+    Para adicionar sem ser no final da lista, usamos insert(posição desejada, valor desejado)
+
+    Podemos mudar um valor atirbuindo um novo valor como uma variável
+
+    Para apagar, podemos dar um .pop() para apagar sempre o último elemento, del lista[posião] ou lista.remove('Valor a ser excluido')
+
+    Para declarar uma lista rápidamente podemos usar fazer assim: lista = list(range(inicio, fim))
+
+    Podemos ordenar de forma padrão ou inversa com sort() ou sort(reverse = True)
+
+"""
+
+dcm = [4, 5, 1, 6, 7, 9, 3, 2,]
+
+dcm.append(0)
+
+print(f'A lista sem ordem, com o valor zero adicionado após a declaração: ')
+
+for i in dcm:
+
+    print(i)
+
+dcm.sort()
+
+print(f'A lista ordenada de forma convencional: ')
+
+for i in dcm:
+
+    print(i)
+
+print(f'A lista ordenada de forma reversa, sem o zero: ')
+
+dcm.remove(0)
+
+dcm.sort(reverse=True)
+
+for i in dcm:
+
+    print(i)
