@@ -20,6 +20,9 @@
 
 """
 
+from cgi import test
+
+
 cmd = ('Hambuguer', 'Suco', 'Pizza', 'Pudim')
 
 for i in range (0, len(cmd)):
@@ -98,3 +101,29 @@ dcm.sort(reverse=True)
 for i in dcm:
 
     print(i)
+
+"""
+
+    Aula 17 - Listas dentro de listas
+
+    Podemos colocar listas dentro de listas. Para acessar um valor dentro de uma lista dentro de outra, usamos dois índices listaMaior[listaMenor][valor]
+
+"""
+
+teste = []
+
+teste.append('Kauê')
+
+teste.append(19)
+
+pessoas = []
+
+pessoas.append(teste)
+
+teste[0] = 'Maria'
+
+teste[1] = 38
+
+pessoas.append(teste[:])
+
+print(pessoas)
