@@ -106,7 +106,7 @@ for i in dcm:
 
     Aula 17 - Listas dentro de listas
 
-    Podemos colocar listas dentro de listas. Para acessar um valor dentro de uma lista dentro de outra, usamos dois índices listaMaior[listaMenor][valor]
+    Podemosw colocar listas dentro de listas. Para acessar um valor dentro de uma lista dentro de outra, usamos dois índices listaMaior[listaMenor][valor]
 
 """
 
