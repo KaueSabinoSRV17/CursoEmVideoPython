@@ -127,3 +127,52 @@ teste[1] = 38
 pessoas.append(teste[:])
 
 print(pessoas)
+
+"""
+
+    Aula 19 = Dicionários
+
+    Dicionários são listas com índices literais
+
+    podem ser declarados com {}
+
+    exemplo:
+
+    {
+        'índice' = valor
+    }
+
+    devemos printar os valores escrevendo os índices com ''
+
+    podemos adicionar elementos automaticamante assim: dicionario['novoElemento'] = valor
+
+    podemos deletar um elemneto usando del dicionario['elemento']
+
+    em laços, podemos acessar as keys(), items() e values()
+
+"""
+
+
+filmes = {
+    'titulo': 'Star Wars',
+    'ano': 1977,
+    'diretor': 'George Lucas'
+}
+
+print(f'\nEstes são os valores dos filmes \n{filmes.values()}')
+
+print(f'\nAs keys são estas \n{filmes.keys()}')
+
+print(f'\n\nEstes são todos os items \n{filmes.items()}')
+
+print(f'\nO nome do filme é {filmes["titulo"]}, o ano de lançamento é {filmes["ano"]} e o diretor é {filmes["diretor"]}')
+
+print(f'\nVamos agora usar um for para exibir tudo na tela: \n')
+
+for k, v in filmes.items():
+
+    print(f'{k}: {v}')
+
+filmes['avaliação'] = 5.0
+
+print(f'Adicionei um elemento de avaliação, sem usar append. ele está apresentado aqui \n\nNota do filme: {filmes["avaliação"]}')
