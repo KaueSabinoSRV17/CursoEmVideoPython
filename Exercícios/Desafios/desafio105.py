@@ -1,5 +1,15 @@
 def boletim(* n, sit=False):
 
+    """
+    
+        Função que calcula média e situação de um aluno, a partir da entrada de notas
+
+        param n: notas do aluno, quantas forem necessárias
+        param sit: Determina se vamos retornar ou não a situação do aluno, onde médias menores que 5 é REPROVADO, menores que 7 RECUPERAÇÃO e maior que 7 APROVADO
+        returns: dicionários com todos os resultados
+    
+    """
+
     s = 0
 
     if sit == True:
@@ -12,15 +22,27 @@ def boletim(* n, sit=False):
 
         if md < 5:
 
-            return f'A média do aluno foi {md}, e ele está REPROVADO'
+            return {
+                'notas': n,
+                'média': md,
+                'situacao': "REPROVADO"
+            }
 
         if md <= 7:
 
-            return f'A média do aluno foi {md}, e ele está de RECUPERAÇÃO'
+            return {
+                'notas': n,
+                'média': md,
+                'situacao': "RECUPERAÇÃO"
+            }
 
         else: 
 
-            return f'A média do aluno foi {md}, e ele está APROVADO!'
+            return {
+                'notas': n,
+                'média': md,
+                'situacao': 'APROVADO'
+            }
 
     else:
 
@@ -30,7 +52,9 @@ def boletim(* n, sit=False):
 
         md = s / len(n)
 
-        return(f'A média do aluno foi {md}')
+        return {
+            'notas': n,
+            'média': md
+        }
 
-
-boletim(5, 10, 3, 5, sit=True)
+print(boletim(5, 10, 3, 5, sit=True))
